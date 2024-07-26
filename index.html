@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flashcard-container">
+        <div class="flashcard" id="flashcard" onclick="startQuiz()">
+            <div class="front" id="question">Click to start the quiz!</div>
+            <div class="back" id="answer"></div>
+        </div>
+        <div class="button-container">
+            <button onclick="previousFlashcard()" id="prevButton" disabled>Previous</button>
+            <span id="counter"></span>
+            <button onclick="nextFlashcard()" id="nextButton" disabled>Next</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
